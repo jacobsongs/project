@@ -24,7 +24,6 @@ pycparser==2.17
 PyDispatcher==2.0.5
 pyOpenSSL==16.2.0
 python-dateutil==2.5.3
-pywin32==217
 queuelib==1.4.2
 rebulk==0.7.6
 Scrappy==0.3.0a4
