@@ -53,11 +53,7 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
-        'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
-            'propagate': True,
-        },
+        
         'APPNAME': {
             'handlers': ['applogfile',],
             'level': 'DEBUG',
