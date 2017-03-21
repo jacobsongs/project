@@ -1,7 +1,31 @@
 {% extends 'Music/base.html' %}
 {% block body%}
-	{% if all_albums %}
-		<h1>Here are all albums</h1>
+	
+		<h1>Here are all Songs</h1>
+
+		<ul id="playlist">
+	        <li class="active">
+	            <a href="http://www.archive.org/download/bolero_69/Bolero.mp3">
+	                Ravel Bolero
+	            </a>
+	        </li>
+	        <li>
+	            <a href="http://www.archive.org/download/MoonlightSonata_755/Beethoven-MoonlightSonata.mp3">
+	                Moonlight Sonata - Beethoven
+	            </a>
+	        </li>
+	        <li>
+	            <a href="http://www.archive.org/download/CanonInD_261/CanoninD.mp3">
+	                Canon in D Pachabel
+	            </a>
+	        </li>
+	        <li>
+	            <a href="http://www.archive.org/download/PatrikbkarlChamberSymph/PatrikbkarlChamberSymph_vbr_mp3.zip">
+	                patrikbkarl chamber symph
+	            </a>
+	        </li>
+    	</ul>
+
 		<img src="https://s3.ap-south-1.amazonaws.com/jacobsongs/Recovery_Album_Cover.jpg" alt="Recovery_Album_Cover" width="128" height="128">
 		<ul>
 			{ % for album in all_albums % }
@@ -9,8 +33,5 @@
 			{ % endfor % }
 		</ul>
 
-	{% else %}
-		<h1>There is No album to Display</h1>
-		
-	{% endif %}
+	
 {% endblock %}
