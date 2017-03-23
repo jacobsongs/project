@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse_lazy
 from .models import Album
 from django.http import HttpResponse
 import logging
-import ContactForm
+
 logger = logging.getLogger('ex_logger')
 logger.info("core.views logger")  # should work                                                                                                         
 
@@ -27,9 +27,3 @@ class AlbumCreate(CreateView):
 	model=Album
 	fields=['artist','album_title','genre','album_logo']
 
-def contact(request):
-    form_class = ContactForm
-    
-    return render(request, 'contact.html', {
-        'form': form_class,
-    })
